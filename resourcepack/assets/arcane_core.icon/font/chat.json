@@ -1,0 +1,52 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:chat/section.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": [
+				"\u0110\u0210\u0310\u0410",
+				"\u0120\u0220\u0320\u0420",
+				"\u0130\u0230\u0330\u0430"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:chat/button.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": [
+				"\u1010\u1020\u1030\u1040\u1050\u1060",
+				"\u1011\u1021\u1031\u1041\u1051\u1061",
+				"\u1070\u1080\u1090\u10a0\u10b0\u10c0",
+				"\u1071\u1081\u1091\u10a1\u10b1\u10c1",
+				"\u10d0\u10e0\u10f0\u1100\u1110\u1120",
+				"\u10d1\u10e1\u10f1\u1101\u1111\u1121",
+				"\u1130\u1140\u1150\u0000\u0000\u0000",
+				"\u1131\u1141\u1151\u0000\u0000\u0000"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:chat/button-x2.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": ["\u2100"]
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:chat/badge.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": ["\u3100"]
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:chat/badge-x8.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": ["\u4100", "\u4200"]
+		}
+	]
+}
