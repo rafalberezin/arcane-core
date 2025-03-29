@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "#arcane_core.api:general/tick/before",
+			"required": false
+		},
+
+		"arcane_core.internal:core/tick",
+		"arcane_core.internal:core/second",
+
+		{
+			"id": "#arcane_core.api:general/tick/after",
+			"required": false
+		},
+
+		"arcane_core.internal:core/player/context_tick_reset"
+	]
+}

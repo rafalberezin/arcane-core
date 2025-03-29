@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:config/init/player",
+
+		{
+			"id": "#arcane_core.api:player/load",
+			"required": false
+		},
+
+		"arcane_core.internal:util/installation/display"
+	]
+}
