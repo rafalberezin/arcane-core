@@ -1,2 +1,3 @@
-# Arcane_Core
-Official Arcane Core datapack repository
+# Arcane Core
+
+Minecraft data pack framework. Work in Progress.
