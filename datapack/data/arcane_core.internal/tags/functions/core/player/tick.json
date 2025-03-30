@@ -4,6 +4,8 @@
 		{
 			"id": "#arcane_core.api:player/tick",
 			"required": false
-		}
+		},
+
+		"arcane_core.internal:module/actionbar/main"
 	]
 }
