@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:cooldown/main",
+
+		{
+			"id": "#arcane_core.api:module/cooldown/tick",
+			"required": false
+		}
+	]
+}

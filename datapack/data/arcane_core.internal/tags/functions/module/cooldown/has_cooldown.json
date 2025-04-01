@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:cooldown/has_cooldown",
+
+		{
+			"id": "#arcane_core.api:module/cooldown/has_cooldown",
+			"required": false
+		}
+	]
+}
