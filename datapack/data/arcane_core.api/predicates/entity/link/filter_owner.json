@@ -1,0 +1,26 @@
+{
+	"condition": "minecraft:value_check",
+	"value": {
+		"type": "minecraft:score",
+		"target": "this",
+		"score": "arcane_core.internal.link.self_id"
+	},
+	"range": {
+		"max": {
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#arcane_core.internal:link.find"
+			},
+			"score": "arcane_core.internal.link.owner_id"
+		},
+		"min": {
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#arcane_core.internal:link.find"
+			},
+			"score": "arcane_core.internal.link.owner_id"
+		}
+	}
+}

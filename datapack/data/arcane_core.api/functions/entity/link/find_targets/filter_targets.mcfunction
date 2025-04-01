@@ -11,6 +11,15 @@
 # You should narrow down the selector to the entities that could be the targets.
 # (use `@a` if you're looking for players)
 #
+# Alternatively you can include the filtering into the
+# selector itself using a predicate of the same name.
+#
+# Example:
+# ```
+# execute if function arcane_core.api:entity/link/find_owner/cache_owner \
+# 	as @e[predicate=arcane_core.api:entity/link/find_owner/filter_targets] ...
+# ```
+#
 # @api
 # @context possible target entity
 
