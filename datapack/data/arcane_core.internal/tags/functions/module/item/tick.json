@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:item/main",
+
+		{
+			"id": "#arcane_core.api:module/item/tick",
+			"required": false
+		}
+	]
+}

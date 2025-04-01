@@ -6,6 +6,7 @@
 			"required": false
 		},
 
+		"arcane_core.internal:module/item/main",
 		"arcane_core.internal:module/actionbar/main"
 	]
 }
