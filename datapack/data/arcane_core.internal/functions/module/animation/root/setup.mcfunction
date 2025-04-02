@@ -2,7 +2,7 @@
 #
 # @internal
 
-function arcane_core.api:entity/link/create/target
+function arcane_core.api:entity/link/target/link
 
 data modify entity @s CustomName set value '{"text": "Animation Root", "color": "#edb97e"}'
 data modify entity @s teleport_duration set value 1

@@ -1,6 +1,6 @@
-#> arcane_core.api:entity/link/create/target
+#> arcane_core.api:entity/link/target/link
 #
-# Link the entity to the last owner created.
+# Link this entity to the last owner created.
 #
 # @api
 # @context entity being owned by another entity

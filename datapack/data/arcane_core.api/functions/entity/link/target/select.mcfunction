@@ -1,7 +1,10 @@
-#> arcane_core.api:entity/link/find_owner/cache_owner
+#> arcane_core.api:entity/link/target/select
 #
-# Cache id of this entity's owner.
+# Select this target to search for it's owner.
 # Returns whether this entity is owned by another entity.
+#
+# TIP: you can use `target/filter` to search for
+# this entity's siblings (including itself)
 #
 # @api
 # @context entity being owned by another entity

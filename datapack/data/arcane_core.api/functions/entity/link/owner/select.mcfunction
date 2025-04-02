@@ -1,6 +1,6 @@
-#> arcane_core.api:entity/link/find_targets/cache_owner
+#> arcane_core.api:entity/link/owner/select
 #
-# Cache owner id of this entity.
+# Select this owner for search.
 # Returns whether this current entity has owner id.
 #
 # @api
