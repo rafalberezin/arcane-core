@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:animation/frame/main",
+
+		{
+			"id": "#arcane_core.api:module/animation/frame",
+			"required": false
+		}
+	]
+}

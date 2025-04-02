@@ -6,6 +6,7 @@
 			"required": false
 		},
 
+		"arcane_core.internal:module/animation/disable",
 		"arcane_core.internal:module/cooldown/disable",
 		"arcane_core.internal:module/item/disable"
 	]
