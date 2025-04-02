@@ -1,9 +1,0 @@
-{
-	"replace": false,
-	"values": [
-		{
-			"id": "#arcane_core.api:entity/tick",
-			"required": false
-		}
-	]
-}
