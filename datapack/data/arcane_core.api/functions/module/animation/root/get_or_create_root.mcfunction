@@ -26,5 +26,5 @@ execute if entity @s[type=!minecraft:player] run return fail
 
 $execute if function arcane_core.api:entity/link/owner/select as @e[type=minecraft:item_display, tag=arcane_core.internal.module.animation.root] if function arcane_core.api:entity/link/target/filter at @s run return run $(run)
 
-function arcane_core.api:entity/link/owner/select
+function arcane_core.api:entity/link/owner/create
 $execute summon minecraft:item_display at @s if function arcane_core.internal:module/animation/root/setup run return run $(run)
