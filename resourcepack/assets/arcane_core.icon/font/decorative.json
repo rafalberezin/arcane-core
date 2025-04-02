@@ -1,0 +1,11 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:decorative/brackets.png",
+			"ascent": 20,
+			"height": 32,
+			"chars": ["[|]"]
+		}
+	]
+}
