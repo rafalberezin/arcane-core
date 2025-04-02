@@ -6,7 +6,7 @@
 
 tellraw @s [ \
 	 {"text": "\n"} \
-	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.info.start"} \
+	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.info.start", "fallback": ""} \
 	,{"text": " Arcane Core ", "color": "#edb97e"} \
 	,{"score": {"name": "#arcane_core.internal:version.major", "objective": "arcane_core.state"}, "color": "#edb97e"} \
 	,{"text": ".", "color": "#edb97e"} \
@@ -14,8 +14,22 @@ tellraw @s [ \
 	,{"text": ".", "color": "#edb97e"} \
 	,{"score": {"name": "#arcane_core.internal:version.patch", "objective": "arcane_core.state"}, "color": "#edb97e"} \
 	,{"text": " has been installed.\n"} \
-	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.info.end"} \
+	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.info.end", "fallback": ""} \
 ]
 
 function arcane_core.internal:util/installation/success/main
 function arcane_core.internal:util/installation/warning/main
+
+tellraw @s [ \
+	 {"translate": "arcane_core.utility.empty", "fallback": "[!] You do not have the ", "color": "#c44949"}\
+	,{"translate": "arcane_core.utility.empty", "fallback": "Arcane Core", "color": "#edb97e"}\
+	,{"translate": "arcane_core.utility.empty", "fallback": " resource pack.\nClick ", "color": "#c44949"}\
+	,{"translate": "arcane_core.utility.empty", "fallback": "[HERE]" \
+		,"color": "#5991ec" \
+		,"clickEvent": { \
+			 "action": "open_url" \
+			,"value": "https://modrinth.com/datapack/arcane-core" \
+		} \
+	} \
+	,{"translate": "arcane_core.utility.empty", "fallback": " to download.", "color": "#c44949"}\
+]

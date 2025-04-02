@@ -4,7 +4,7 @@
 
 tellraw @s [ \
 	 {"text": ""} \
-	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.success.continue"} \
+	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.success.continue", "fallback": ""} \
 	,{"text": " "} \
 	,{"storage": "arcane_core.internal:core", "nbt": "root.installation.temp[-1]"} \
 ]
