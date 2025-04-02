@@ -3,28 +3,20 @@
 		"pack_format": 41,
 		"description": [
 			{
-				"text": "A ",
-				"color": "white"
-			},
-			{
-				"text": "Powerful",
-				"color": "#edb97e"
-			},
-			{
-				"text": " and ",
-				"color": "white"
-			},
-			{
-				"text": "Versatile",
+				"text": "Arcane Core",
 				"color": "#edb97e"
 			},
 			{
 				"text": " data pack ",
-				"color": "#edb97e"
+				"color": "#b0b0b0"
 			},
 			{
-				"text": "Framework",
-				"color": "#b26fed"
+				"text": "framework",
+				"color": "#c99ef0"
+			},
+			{
+				"text": ".",
+				"color": "#b0b0b0"
 			},
 			"\n",
 			{
@@ -33,7 +25,7 @@
 			},
 			{
 				"text": "Rafał Berezin",
-				"color": "#acff94"
+				"color": "#5991ec"
 			}
 		]
 	}

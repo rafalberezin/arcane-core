@@ -3,16 +3,12 @@
 		"pack_format": 32,
 		"description": [
 			{
-				"text": "A resource pack for ",
-				"color": "white"
-			},
-			{
 				"text": "Arcane Core",
-				"color": "#b26fed"
+				"color": "#edb97e"
 			},
 			{
-				"text": " data pack framework ",
-				"color": "white"
+				"text": " framework.",
+				"color": "#b0b0b0"
 			},
 			"\n",
 			{
@@ -21,7 +17,7 @@
 			},
 			{
 				"text": "Rafał Berezin",
-				"color": "#acff94"
+				"color": "#5991ec"
 			}
 		]
 	}
