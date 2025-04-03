@@ -9,7 +9,7 @@
 # @api
 # @context entity being owned by another entity
 
-execute unless score @s arcane_core.internal.link.owner_id = @s arcane_core.internal.link.owner_id run return 0
+execute unless score @s arcane_core.internal.link.owner_id = @s arcane_core.internal.link.owner_id run return fail
 
 scoreboard players operation #arcane_core.internal:link.find arcane_core.internal.link.owner_id = @s arcane_core.internal.link.owner_id
 return 1
