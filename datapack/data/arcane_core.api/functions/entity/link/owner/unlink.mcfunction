@@ -5,4 +5,4 @@
 # @api
 # @context owner of other entities
 
-scoreboard players reset @s arcane_core.internal.link.self_id
+scoreboard players reset @s arcane_core.internal.link.link_id

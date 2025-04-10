@@ -5,4 +5,4 @@
 # @api
 # @context entity being owned by another entity
 
-scoreboard players operation @s arcane_core.internal.link.owner_id = #arcane_core.internal:link.create arcane_core.internal.link.owner_id
+scoreboard players operation @s arcane_core.internal.link.linked_to = #arcane_core.internal:link.create arcane_core.internal.link.linked_to

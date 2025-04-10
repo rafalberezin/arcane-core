@@ -26,4 +26,4 @@
 # @api
 # @context possible owner entity
 
-return run execute if score @s arcane_core.internal.link.self_id = #arcane_core.internal:link.find arcane_core.internal.link.owner_id
+return run execute if score @s arcane_core.internal.link.link_id = #arcane_core.internal:link.find arcane_core.internal.link.linked_to

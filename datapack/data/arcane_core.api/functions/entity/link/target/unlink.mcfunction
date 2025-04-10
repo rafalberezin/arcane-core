@@ -5,4 +5,4 @@
 # @api
 # @context entity being owned by another entity
 
-scoreboard players reset @s arcane_core.internal.link.owner_id
+scoreboard players reset @s arcane_core.internal.link.linked_to

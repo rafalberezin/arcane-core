@@ -3,7 +3,7 @@
 	"value": {
 		"type": "minecraft:score",
 		"target": "this",
-		"score": "arcane_core.internal.link.owner_id"
+		"score": "arcane_core.internal.link.linked_to"
 	},
 	"range": {
 		"max": {
@@ -12,7 +12,7 @@
 				"type": "minecraft:fixed",
 				"name": "#arcane_core.internal:link.find"
 			},
-			"score": "arcane_core.internal.link.owner_id"
+			"score": "arcane_core.internal.link.linked_to"
 		},
 		"min": {
 			"type": "minecraft:score",
@@ -20,7 +20,7 @@
 				"type": "minecraft:fixed",
 				"name": "#arcane_core.internal:link.find"
 			},
-			"score": "arcane_core.internal.link.owner_id"
+			"score": "arcane_core.internal.link.linked_to"
 		}
 	}
 }
