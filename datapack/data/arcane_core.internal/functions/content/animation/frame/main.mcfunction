@@ -1,4 +1,4 @@
-#> arcane_core.internal:animation/frame/main
+#> arcane_core.internal:content/animation/frame/main
 #
 # @internal
 #

@@ -2,4 +2,4 @@
 #
 # @user
 
-function arcane_core.internal:module/actionbar/display/clock/enable
+function arcane_core.internal:content/actionbar/clock/enable

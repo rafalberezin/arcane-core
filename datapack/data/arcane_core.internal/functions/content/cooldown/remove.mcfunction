@@ -1,4 +1,4 @@
-#> arcane_core.internal:cooldown/remove
+#> arcane_core.internal:content/cooldown/remove
 #
 # @internal
 

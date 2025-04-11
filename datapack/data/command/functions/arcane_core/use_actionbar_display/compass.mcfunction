@@ -2,4 +2,4 @@
 #
 # @user
 
-function arcane_core.internal:module/actionbar/display/compass/enable
+function arcane_core.internal:content/actionbar/compass/enable

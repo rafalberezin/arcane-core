@@ -1,4 +1,4 @@
-#> arcane_core.internal:module/actionbar/display/compass/get_facing
+#> arcane_core.internal:content/actionbar/compass/get_facing
 #
 # @internal
 

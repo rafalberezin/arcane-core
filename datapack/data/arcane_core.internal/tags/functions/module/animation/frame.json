@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"arcane_core.internal:animation/frame/main",
+		"arcane_core.internal:content/animation/frame/main",
 
 		{
 			"id": "#arcane_core.api:module/animation/frame",

@@ -1,4 +1,4 @@
-#> arcane_core.internal:module/actionbar/display/clock/enable
+#> arcane_core.internal:content/actionbar/clock/enable
 #
 # @internal
 

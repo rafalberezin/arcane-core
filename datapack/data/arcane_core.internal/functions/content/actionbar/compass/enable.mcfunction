@@ -1,4 +1,4 @@
-#> arcane_core.internal:module/actionbar/display/compass/enable
+#> arcane_core.internal:content/actionbar/compass/enable
 #
 # @internal
 

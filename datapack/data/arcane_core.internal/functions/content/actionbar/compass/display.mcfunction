@@ -1,4 +1,4 @@
-#> arcane_core.internal:module/actionbar/display/compass/display
+#> arcane_core.internal:content/actionbar/compass/display
 #
 # @internal
 #
@@ -10,7 +10,7 @@ execute store result score #arcane_core.internal:module.actionbar.compass.x arca
 execute store result score #arcane_core.internal:module.actionbar.compass.y arcane_core.state run data get entity @s Pos[1]
 execute store result score #arcane_core.internal:module.actionbar.compass.z arcane_core.state run data get entity @s Pos[2]
 
-function arcane_core.internal:module/actionbar/display/compass/get_facing
+function arcane_core.internal:content/actionbar/compass/get_facing
 
 title @s actionbar [ \
 	 {"text": ""}\

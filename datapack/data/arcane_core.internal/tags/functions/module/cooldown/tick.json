@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"arcane_core.internal:cooldown/main",
+		"arcane_core.internal:content/cooldown/main",
 
 		{
 			"id": "#arcane_core.api:module/cooldown/tick",

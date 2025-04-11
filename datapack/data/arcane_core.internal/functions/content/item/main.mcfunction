@@ -1,4 +1,4 @@
-#> arcane_core.internal:item/main
+#> arcane_core.internal:content/item/main
 #
 # @internal
 #
