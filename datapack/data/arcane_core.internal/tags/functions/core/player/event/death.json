@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		{
+			"id": "#arcane_core.api:player/event/death",
+			"required": false
+		}
+	]
+}
