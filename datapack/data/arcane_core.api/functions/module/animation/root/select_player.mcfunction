@@ -15,5 +15,6 @@ execute if function arcane_core.api:entity/link/owner/select if entity @e[type=m
 
 function arcane_core.api:entity/link/owner/create
 execute summon minecraft:item_display run function arcane_core.internal:module/animation/root/setup
+function arcane_core.api:entity/link/owner/select
 
 return 1
