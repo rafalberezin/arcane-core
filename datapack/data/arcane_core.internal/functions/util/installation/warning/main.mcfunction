@@ -6,12 +6,11 @@ execute unless data storage arcane_core.internal:core root.installation.warning[
 
 data modify storage arcane_core.internal:core root.installation.temp set from storage arcane_core.internal:core root.installation.warning
 
-tellraw @s [ \
-	 {"text": ""} \
+tellraw @s [{"text": ""} \
 	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.warning.start", "fallback": ""} \
-	,{"text": " These projects require different version\n", "color": "#c44949"} \
-	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.warning.continue", "fallback": ""} \
-	,{"text": " of ", "color": "#c44949"} \
+	,{"text": "These projects require different version", "color": "#c44949"} \
+	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.warning.continue.new_line", "fallback": "\n"} \
+	,{"text": "of ", "color": "#c44949"} \
 	,{"text": "Arcane Core", "color": "#edb97e"} \
 	,{"text": " and might not work properly:", "color": "#c44949"} \
 ]

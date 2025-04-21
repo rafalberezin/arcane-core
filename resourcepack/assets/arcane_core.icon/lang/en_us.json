@@ -103,5 +103,8 @@
 	"arcane_core.icon.chat.badge.op": "\u3100 ",
 	"arcane_core.icon.chat.badge.info": "\u0110 ",
 	"arcane_core.icon.chat.badge.warning": "\u0210 ",
-	"arcane_core.icon.chat.badge.success": "\u0310 "
+	"arcane_core.icon.chat.badge.success": "\u0310 ",
+
+	"arcane_core.icon.module.mana.crystal": "\u0110",
+	"arcane_core.icon.module.mana.crystal.big": "\u0120"
 }
