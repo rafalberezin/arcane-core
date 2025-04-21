@@ -37,6 +37,15 @@
 	"arcane_core.icon.chat.section.config.continue.double.new_line": "\n\u0420\n\u0420 ",
 	"arcane_core.icon.chat.section.config.end.new_line": "\n\u0430 ",
 
+	"arcane_core.icon.chat.section.arcane.start": "\u0510 ",
+	"arcane_core.icon.chat.section.arcane.continue": "\u0520 ",
+	"arcane_core.icon.chat.section.arcane.continue.double": "\u0520\n\u0520 ",
+	"arcane_core.icon.chat.section.arcane.end": "\u0530 ",
+	"arcane_core.icon.chat.section.arcane.start.new_line": "\n\u0510 ",
+	"arcane_core.icon.chat.section.arcane.continue.new_line": "\n\u0520 ",
+	"arcane_core.icon.chat.section.arcane.continue.double.new_line": "\n\u0520\n\u0520 ",
+	"arcane_core.icon.chat.section.arcane.end.new_line": "\n\u0530 ",
+
 	"arcane_core.icon.chat.button.lock.locked": "\u1010 ",
 	"arcane_core.icon.chat.button.lock.choice": "\u1020 ",
 	"arcane_core.icon.chat.button.lock.unlocked": "\u1030 ",
@@ -88,6 +97,8 @@
 	"arcane_core.icon.chat.button.navigation.back.disabled": "\u1151 ",
 
 	"arcane_core.icon.chat.button-x2.edit": "\u2100 ",
+	"arcane_core.icon.chat.button-x2.open": "\u2200 ",
+	"arcane_core.icon.chat.button-x2.read": "\u2300 ",
 
 	"arcane_core.icon.chat.badge.op": "\u3100 ",
 	"arcane_core.icon.chat.badge.info": "\u0110 ",
