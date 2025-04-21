@@ -1,6 +1,10 @@
 {
 	"providers": [
 		{
+			"type": "reference",
+			"id": "minecraft:include/space"
+		},
+		{
 			"type": "bitmap",
 			"file": "arcane_core.icon:chat/section.png",
 			"ascent": 11,
@@ -40,13 +44,6 @@
 			"ascent": 11,
 			"height": 16,
 			"chars": ["\u3100"]
-		},
-		{
-			"type": "bitmap",
-			"file": "arcane_core.icon:chat/badge-x8.png",
-			"ascent": 11,
-			"height": 16,
-			"chars": ["\u4100", "\u4200"]
 		}
 	]
 }
