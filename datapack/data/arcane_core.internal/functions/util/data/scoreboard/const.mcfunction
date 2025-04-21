@@ -1,4 +1,4 @@
-#> arcane_core.internal:util/scoreboard/load/const
+#> arcane_core.internal:util/data/scoreboard/const
 #
 # @internal
 

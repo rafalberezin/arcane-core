@@ -1,4 +1,4 @@
-#> arcane_core.internal:util/scoreboard/load/main
+#> arcane_core.internal:util/data/scoreboard/load
 #
 # @internal
 
@@ -13,4 +13,4 @@ scoreboard objectives add arcane_core.internal.link.linked_to dummy
 scoreboard objectives add arcane_core.internal.event.join minecraft.custom:minecraft.leave_game
 scoreboard objectives add arcane_core.internal.event.death minecraft.custom:minecraft.time_since_death
 
-function arcane_core.internal:util/scoreboard/load/const
+function arcane_core.internal:util/data/scoreboard/const

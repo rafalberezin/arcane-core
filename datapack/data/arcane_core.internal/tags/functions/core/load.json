@@ -2,9 +2,7 @@
 	"replace": false,
 	"values": [
 		"#arcane_core.internal:module/disable",
-		"arcane_core.internal:util/scoreboard/load/main",
-		"arcane_core.internal:config/init/global",
-		"arcane_core.internal:util/installation/reset",
+		"arcane_core.internal:util/data/load",
 
 		{
 			"id": "#arcane_core.api:general/load",
