@@ -16,8 +16,8 @@ tellraw @s [{"text": ""} \
 	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.arcane.end.new_line", "fallback": ""} \
 ]
 
-function arcane_core.internal:util/installation/success/main
-function arcane_core.internal:util/installation/warning/main
+execute if data storage arcane_core.internal:core root.installation.success[0] run function arcane_core.internal:util/installation/success/main
+execute if data storage arcane_core.internal:core root.installation.warning[0] run function arcane_core.internal:util/installation/warning/main
 
 tellraw @s [ \
 	 {"translate": "arcane_core.utility.empty", "fallback": "[!] You do not have the ", "color": "#c44949"} \

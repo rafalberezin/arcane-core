@@ -2,9 +2,7 @@
 #
 # @internal
 
-execute unless data storage arcane_core.internal:core root.installation.success[0] run return 0
-
-data modify storage arcane_core.internal:core root.installation.temp set from storage arcane_core.internal:core root.installation.success
+data modify storage arcane_core.internal:temp root.iterate set from storage arcane_core.internal:core root.installation.success
 
 tellraw @s [{"text": ""} \
 	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.success.start", "fallback": ""} \

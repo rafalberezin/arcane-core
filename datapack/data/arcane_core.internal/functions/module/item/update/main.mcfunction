@@ -2,12 +2,12 @@
 #
 # @internal
 
-data remove storage arcane_core.internal:temp root.item.update.inv
-data modify storage arcane_core.internal:temp root.item.update.inv set from entity @s Inventory
+data remove storage arcane_core.internal:temp root.iterate
+data modify storage arcane_core.internal:temp root.iterate set from entity @s Inventory
 
 scoreboard players set #arcane_core.internal:temp arcane_core.math 0
 
-execute if data storage arcane_core.internal:temp root.item.update.inv[0] run function arcane_core.internal:module/item/update/iterate_inventory
+execute if data storage arcane_core.internal:temp root.iterate[0] run function arcane_core.internal:module/item/update/iterate_inventory
 
 tellraw @s [{"text": ""} \
 	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.success.start.new_line"}\

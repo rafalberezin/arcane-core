@@ -2,9 +2,8 @@
 #
 # @internal
 
-data modify storage arcane_core.internal:core root.installation.warning append value {}
-
-data modify storage arcane_core.internal:core root.installation.warning[-1].project_name set from storage arcane_core.internal:temp root.installation.project_name
+data modify storage arcane_core.internal:core root.installation.warning append from storage arcane_core.internal:temp root.installation
+data remove storage arcane_core.internal:temp root.installation
 
 execute store result storage arcane_core.internal:core root.installation.warning[-1].major.min int 1 run scoreboard players get #arcane_core.internal:temp.installation.major arcane_core.state
 scoreboard players add #arcane_core.internal:temp.installation.major arcane_core.state 1

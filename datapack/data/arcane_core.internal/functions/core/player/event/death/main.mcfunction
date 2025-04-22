@@ -11,9 +11,10 @@ execute store result score #arcane_core.internal:temp arcane_core.state run game
 execute if score #arcane_core.internal:temp arcane_core.state matches 0 run return run function #arcane_core.internal:core/player/event/death
 
 data modify storage arcane_core.internal:temp root.proxy set from entity @s LastDeathLocation
-data modify storage arcane_core.internal:temp root.pos.dim set from storage arcane_core.internal:temp root.proxy.dimension
-data modify storage arcane_core.internal:temp root.pos.x set from storage arcane_core.internal:temp root.proxy.pos[0]
-data modify storage arcane_core.internal:temp root.pos.y set from storage arcane_core.internal:temp root.proxy.pos[1]
-data modify storage arcane_core.internal:temp root.pos.z set from storage arcane_core.internal:temp root.proxy.pos[2]
+data modify storage arcane_core.internal:temp root.macro set value {}
+data modify storage arcane_core.internal:temp root.macro.dim set from storage arcane_core.internal:temp root.proxy.dimension
+data modify storage arcane_core.internal:temp root.macro.x set from storage arcane_core.internal:temp root.proxy.pos[0]
+data modify storage arcane_core.internal:temp root.macro.y set from storage arcane_core.internal:temp root.proxy.pos[1]
+data modify storage arcane_core.internal:temp root.macro.z set from storage arcane_core.internal:temp root.proxy.pos[2]
 
-function arcane_core.internal:core/player/event/death/position with storage arcane_core.internal:temp root.pos
+function arcane_core.internal:core/player/event/death/position with storage arcane_core.internal:temp root.macro

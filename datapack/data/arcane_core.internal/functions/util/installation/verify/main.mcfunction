@@ -9,4 +9,5 @@ execute if score #arcane_core.internal:temp.installation.minor arcane_core.state
 execute if score #arcane_core.internal:temp.installation.minor arcane_core.state = #arcane_core.internal:version.minor arcane_core.state if score #arcane_core.internal:temp.installation.patch arcane_core.state > #arcane_core.internal:version.patch arcane_core.state run return run function arcane_core.internal:util/installation/verify/fail
 
 data modify storage arcane_core.internal:core root.installation.success append from storage arcane_core.internal:temp root.installation.project_name
+data remove storage arcane_core.internal:temp root.installation
 return 1

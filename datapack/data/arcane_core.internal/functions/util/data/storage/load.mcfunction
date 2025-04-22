@@ -4,5 +4,5 @@
 
 data remove storage arcane_core.internal:temp root
 data modify storage arcane_core.internal:core root set value { \
-	 installation: {temp: [], success: [], warning: []} \
+	 installation: {success: [], warning: []} \
 }
