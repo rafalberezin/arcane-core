@@ -3,7 +3,7 @@
 # @internal
 
 tellraw @s [{"text": ""} \
-	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon.chat.section.warning.continue", "fallback": ""} \
+	,{"font": "arcane_core.icon:chat", "translate": "arcane_core.icon:chat.section.warning.continue", "fallback": ""} \
 	,{"storage": "arcane_core.internal:temp", "nbt": "root.iterate[-1].project_name"} \
 	,{"text": " ["} \
 	,{"storage": "arcane_core.internal:temp", "nbt": "root.iterate[-1].major.min", "color": "#ffd12f"} \
