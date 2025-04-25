@@ -36,7 +36,7 @@
 # 		patch: `string`
 # 			Arcane Core patch version (last number)
 #
-# @returns
+# @returns if the framework version is compatible
 
 $data modify storage arcane_core.internal:temp root.installation.project_name set value "$(project_name)"
 
