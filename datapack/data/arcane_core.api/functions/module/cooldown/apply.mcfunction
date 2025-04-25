@@ -5,4 +5,4 @@
 # @api
 # @context player
 
-tag @s add arcane_core.internal.module.cooldown
+execute if entity @s[type=minecraft:player] run tag @s add arcane_core.internal.module.cooldown

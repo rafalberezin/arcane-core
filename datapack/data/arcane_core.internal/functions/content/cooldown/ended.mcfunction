@@ -1,4 +1,4 @@
-#> arcane_core.internal:content/cooldown/remove
+#> arcane_core.internal:content/cooldown/ended
 #
 # @internal
 
@@ -6,4 +6,4 @@
 
 tag @s remove arcane_core.internal.cooldown
 
-function arcane_core.api:module/cooldown/remove
+function arcane_core.api:module/cooldown/ended

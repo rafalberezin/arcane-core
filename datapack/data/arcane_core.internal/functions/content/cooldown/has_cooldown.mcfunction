@@ -2,4 +2,4 @@
 #
 # @internal
 
-execute if entity @s[tag=arcane_core.internal.cooldown] run return 1
+execute if entity @s[tag=arcane_core.internal.cooldown] run function arcane_core.api:module/cooldown/has_cooldown
