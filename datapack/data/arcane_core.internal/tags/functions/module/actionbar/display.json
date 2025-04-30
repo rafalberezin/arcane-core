@@ -7,6 +7,7 @@
 		},
 
 		"arcane_core.internal:content/actionbar/clock/display",
-		"arcane_core.internal:content/actionbar/compass/display"
+		"arcane_core.internal:content/actionbar/compass/display",
+		"arcane_core.internal:content/actionbar/mana/display"
 	]
 }
