@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"arcane_core.internal:config/init/player",
+		"#arcane_core.internal:core/player/config",
 
 		{
 			"id": "#arcane_core.api:player/load",

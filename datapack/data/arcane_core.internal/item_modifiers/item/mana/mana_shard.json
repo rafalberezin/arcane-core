@@ -1,0 +1,14 @@
+[
+	{
+		"function": "minecraft:set_custom_data",
+		"tag": {
+			"arcane_core.api:meta": {
+				"update": "arcane_core.internal:item/mana/mana_shard"
+			}
+		}
+	},
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 7920001
+	}
+]

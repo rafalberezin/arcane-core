@@ -9,4 +9,4 @@ tag @s add arcane_core.internal.event.death.processed
 execute store result score #arcane_core.internal:temp arcane_core.state run gamerule doImmediateRespawn
 
 execute if score #arcane_core.internal:temp arcane_core.state matches 1 run return run function arcane_core.internal:core/player/event/death/prepare_position
-function #arcane_core.internal:core/player/event/death
+function #arcane_core.api:player/event/death

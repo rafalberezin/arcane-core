@@ -199,5 +199,7 @@
 
 	"arcane_core.icon:chat.button.edit": "\u1210\u0101\u1230\u0121\u0207Edit\u020b",
 	"arcane_core.icon:chat.button.open": "\u1110\u0101\u1130\u0121 Open\u0208",
-	"arcane_core.icon:chat.button.read": "\u1110\u0101\u1130\u0121 Read\u0208"
+	"arcane_core.icon:chat.button.read": "\u1110\u0101\u1130\u0121 Read\u0208",
+
+	"arcane_core.icon:module.mana.crystal": "\u0110"
 }

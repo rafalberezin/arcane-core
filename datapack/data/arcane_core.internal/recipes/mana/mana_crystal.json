@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["gag", "ala", "gag"],
+	"key": {
+		"g": { "item": "minecraft:glowstone_dust" },
+		"a": { "item": "minecraft:amethyst_shard" },
+		"l": { "item": "minecraft:lapis_lazuli" }
+	},
+	"category": "misc",
+	"group": "arcane_core.internal:mana/mana_crystal",
+	"result": {
+		"id": "minecraft:warped_fungus_on_a_stick",
+		"count": 1,
+		"components": {
+			"minecraft:item_name": "{\"text\": \"Mana Crystal\", \"color\": \"#2bb5ff\"}",
+			"minecraft:custom_data": {
+				"arcane_core.api:item": {
+					"arcane_core": {
+						"mana": {
+							"mana_crystal": true
+						}
+					}
+				},
+				"arcane_core.api:meta": {
+					"update": "arcane_core.internal:update/mana/mana_crystal"
+				}
+			},
+			"minecraft:custom_model_data": 7920001,
+			"minecraft:lore": [
+				"{\"text\": \"\" }",
+				"[{\"text\": \"Use to increate your \", \"color\": \"#b0b0b0\", \"italic\": false}, {\"text\": \"Max Mana\", \"color\": \"#2bb5ff\", \"italic\": false}]",
+				"{\"text\": \"\" }"
+			]
+		}
+	}
+}

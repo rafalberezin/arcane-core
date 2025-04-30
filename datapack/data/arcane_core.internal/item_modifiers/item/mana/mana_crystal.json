@@ -1,0 +1,49 @@
+[
+	{
+		"function": "minecraft:set_custom_data",
+		"tag": {
+			"arcane_core.api:item": {
+				"arcane_core": {
+					"mana": {
+						"mana_crystal": true
+					}
+				}
+			},
+			"arcane_core.api:meta": {
+				"update": "arcane_core.internal:item/mana/mana_crystal"
+			}
+		}
+	},
+	{
+		"function": "minecraft:set_name",
+		"target": "item_name",
+		"name": {
+			"text": "Mana Crystal",
+			"color": "#2bb5ff"
+		}
+	},
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 7920001
+	},
+	{
+		"function": "minecraft:set_lore",
+		"mode": "replace_all",
+		"lore": [
+			{ "text": "" },
+			[
+				{
+					"text": "Use to increase your ",
+					"color": "#b0b0b0",
+					"italic": false
+				},
+				{
+					"text": "Max Mana",
+					"color": "#2bb5ff",
+					"italic": false
+				}
+			],
+			{ "text": "" }
+		]
+	}
+]

@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"arcane_core.internal:module/mana/on_respawn",
+
+		{
+			"id": "#arcane_core.api:player/event/respawn",
+			"required": false
+		}
+	]
+}

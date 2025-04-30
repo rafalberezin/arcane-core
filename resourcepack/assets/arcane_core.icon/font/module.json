@@ -1,0 +1,11 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "arcane_core.icon:module/mana.png",
+			"ascent": 9,
+			"height": 11,
+			"chars": ["\u0110"]
+		}
+	]
+}
