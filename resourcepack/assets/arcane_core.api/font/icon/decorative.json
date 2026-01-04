@@ -1,0 +1,15 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "arcane_core.internal:font/decorative.png",
+			"ascent": 21,
+			"height": 32,
+			"chars": ["[|]"]
+		},
+		{
+			"type": "reference",
+			"id": "arcane_core.api:include/ascii"
+		}
+	]
+}

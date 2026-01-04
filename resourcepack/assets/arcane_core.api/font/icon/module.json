@@ -2,7 +2,7 @@
 	"providers": [
 		{
 			"type": "bitmap",
-			"file": "arcane_core.icon:module/mana.png",
+			"file": "arcane_core.internal:font/module.png",
 			"ascent": 9,
 			"height": 11,
 			"chars": ["\u0110"]

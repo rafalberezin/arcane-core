@@ -1,0 +1,38 @@
+{
+	"providers": [
+		{
+			"type": "reference",
+			"id": "arcane_core.api:include/space"
+		},
+		{
+			"type": "reference",
+			"id": "arcane_core.api:include/ascii"
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.internal:font/composite/background.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": [
+				"\u1000\u1010\u1020\u1030\u1040\u1050",
+				"\u1100\u1110\u1120\u1130\u1140\u1150",
+				"\u1200\u1210\u1220\u1230\u1240\u1250",
+				"\u1300\u1310\u1320\u1330\u1340\u1350",
+				"\u1400\u1410\u1420\u1430\u1440\u1450",
+				"\u1500\u1510\u1520\u1530\u1540\u1550"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "arcane_core.internal:font/composite/symbol.png",
+			"ascent": 11,
+			"height": 16,
+			"chars": [
+				"\u2000\u2001\u2002\u2003\u2004\u2005",
+				"\u2010\u2011\u2012\u2013\u2014\u2015",
+				"\u2020\u2021\u2022\u2023\u2024\u2025",
+				"\u2100\u2110\u0000\u0000\u0000\u0000"
+			]
+		}
+	]
+}
