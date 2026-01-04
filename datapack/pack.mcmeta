@@ -1,32 +1,18 @@
 {
 	"pack": {
-		"pack_format": 41,
 		"description": [
-			{
-				"text": "Arcane Core",
-				"color": "#edb97e"
-			},
-			{
-				"text": " data pack ",
-				"color": "#b0b0b0"
-			},
-			{
-				"text": "framework",
-				"color": "#c99ef0"
-			},
-			{
-				"text": ".",
-				"color": "#b0b0b0"
-			},
+			{ "text": "Arcane Core", "color": "#edb97e" },
+			{ "text": " framework", "color": "#c99ef0" },
 			"\n",
-			{
-				"text": "Made by ",
-				"color": "#888888"
-			},
-			{
-				"text": "Rafał Berezin",
-				"color": "#5991ec"
-			}
-		]
+			{ "text": "Made by ", "color": "#b0b0b0" },
+			{ "text": "Arcane Labs", "color": "#5991ec" }
+		],
+		"pack_format": 48,
+		"supported_formats": {
+			"min_inclusive": 48,
+			"max_inclusive": 94
+		},
+		"min_format": 48,
+		"max_format": 94
 	}
 }
