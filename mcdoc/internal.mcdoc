@@ -1,5 +1,7 @@
 dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
-	"/": struct {},
+	"/": struct {
+		errors: [string],
+	},
 }
 
 dispatch minecraft:storage[arcane_core.internal:temp] to struct TempStorage {
@@ -7,6 +9,7 @@ dispatch minecraft:storage[arcane_core.internal:temp] to struct TempStorage {
 		"any"?: any,
 		"string"?: string,
 
+		error_code?: int @ 0..,
 		macro?: struct { [string]: any },
 	},
 }
