@@ -1,0 +1,15 @@
+{
+	"replace": true,
+	"values": [
+		{
+			"id": "#arcane_core.api:module/load",
+			"required": false
+		},
+
+		"arcane_core.internal:module/animation/load",
+		"arcane_core.internal:module/cooldown/load",
+		"arcane_core.internal:module/effect/load",
+		"arcane_core.internal:module/item/load",
+		"arcane_core.internal:module/mana/load"
+	]
+}

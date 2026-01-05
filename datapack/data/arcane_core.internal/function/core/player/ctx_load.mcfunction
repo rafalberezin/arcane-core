@@ -1,4 +1,4 @@
-#> arcane_core.internal:core/player/context_load
+#> arcane_core.internal:core/player/ctx_load
 #
 # @internal
 #

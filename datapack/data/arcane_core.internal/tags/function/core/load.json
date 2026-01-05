@@ -1,0 +1,15 @@
+{
+	"replace": true,
+	"values": [
+		"#arcane_core.internal:module/disable",
+		"arcane_core.internal:data/load",
+
+		{
+			"id": "#arcane_core.api:core/load",
+			"required": false
+		},
+
+		"#arcane_core.internal:module/load",
+		"arcane_core.internal:core/player/ctx_load"
+	]
+}

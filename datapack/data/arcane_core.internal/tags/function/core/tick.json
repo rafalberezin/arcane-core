@@ -1,0 +1,18 @@
+{
+	"replace": true,
+	"values": [
+		{
+			"id": "#arcane_core.api:core/tick/before",
+			"required": false
+		},
+
+		"arcane_core.internal:core/tick",
+
+		{
+			"id": "#arcane_core.api:core/tick/after",
+			"required": false
+		},
+
+		"arcane_core.internal:core/tick_reset"
+	]
+}

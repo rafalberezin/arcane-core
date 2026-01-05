@@ -1,4 +1,4 @@
-#> arcane_core.internal:util/data/scoreboard/const
+#> arcane_core.internal:data/scoreboard/const
 #
 # @internal
 
@@ -35,7 +35,3 @@ scoreboard players set #arcane_core.api:const.1000 arcane_core.math 1000
 
 scoreboard players set #arcane_core.api:const.min arcane_core.math -2147483648
 scoreboard players set #arcane_core.api:const.max arcane_core.math 2147483647
-
-scoreboard players set #arcane_core.internal:version.major arcane_core.state 0
-scoreboard players set #arcane_core.internal:version.minor arcane_core.state 1
-scoreboard players set #arcane_core.internal:version.patch arcane_core.state 0

@@ -1,0 +1,12 @@
+dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
+	"/": struct {},
+}
+
+dispatch minecraft:storage[arcane_core.internal:temp] to struct TempStorage {
+	"/": struct {
+		"any"?: any,
+		"string"?: string,
+
+		macro?: struct { [string]: any },
+	},
+}

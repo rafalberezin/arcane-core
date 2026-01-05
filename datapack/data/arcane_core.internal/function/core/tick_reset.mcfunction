@@ -1,4 +1,4 @@
-#> arcane_core.internal:core/player/context_tick_reset
+#> arcane_core.internal:core/tick_reset
 #
 # @internal
 #
