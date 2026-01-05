@@ -1,0 +1,10 @@
+dispatch minecraft:storage[arcane_core.api:io] to struct IOStorage {
+	in: IOStorageIn,
+	out: IOStorageOut,
+}
+
+struct IOStorageIn {
+	"any": any,
+}
+
+struct IOStorageOut {}
