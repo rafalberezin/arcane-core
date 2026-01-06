@@ -3,8 +3,25 @@ dispatch minecraft:storage[arcane_core.api:io] to struct IOStorage {
 	out: IOStorageOut,
 }
 
+type VersionArray = [int @ 0..] @ 3
+
 struct IOStorageIn {
+	core: struct {
+		register_project: InRegisterProject,
+	},
 	"any": any,
 }
 
-struct IOStorageOut {}
+struct IOStorageOut {
+	return: any
+}
+
+struct InRegisterProject {
+	namespace: string @ 1..,
+	name: string @ 1..,
+	version: VersionArray,
+	core_version: VersionArray,
+	resourcepack?: struct InRegisterProjectResourcePack {
+		required: boolean
+	},
+}

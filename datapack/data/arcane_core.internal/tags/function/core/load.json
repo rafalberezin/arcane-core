@@ -9,6 +9,7 @@
 			"required": false
 		},
 
+		"arcane_core.internal:data/load_report/compose/main",
 		"#arcane_core.internal:module/load",
 		"arcane_core.internal:core/player/ctx_load"
 	]

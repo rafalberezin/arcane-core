@@ -2,8 +2,9 @@
 #
 # @internal
 
-data modify storage arcane_core.internal:temp / set value {}
+data modify storage arcane_core.internal:temp / set value { phase: { register_project: {} } }
 
 data modify storage arcane_core.internal:core / set value { \
 	errors: [], \
+	load_report: [], \
 }
