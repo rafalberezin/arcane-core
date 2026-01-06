@@ -169,9 +169,6 @@
 	"arcane_core.api:icon.badge.experimental": "\u1300\u0111\u2024\u0203",
 	"arcane_core.api:icon.badge.arcane": "\u1300\u0111\u2025\u0203",
 
-	"arcane_core.api:icon.toggle.off": "\u2100",
-	"arcane_core.api:icon.toggle.on": "\u2110",
-
 	"arcane_core.api:icon.button.edit": "\u1210\u0101\u1230\u0121\u0207Edit\u020b",
 	"arcane_core.api:icon.button.open": "\u1110\u0101\u1130\u0121 Open\u0208",
 	"arcane_core.api:icon.button.read": "\u1210\u0101\u1230\u0121 Read\u0208",
