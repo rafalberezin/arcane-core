@@ -49,41 +49,35 @@
 	"arcane_core.api:util.space.48": "\u0230",
 	"arcane_core.api:util.space.64": "\u0240",
 
-	"arcane_core.api:icon.bg.green": "\u1000",
+	"arcane_core.api:icon.bg.green": "\u1000\u0101",
 	"arcane_core.api:icon.bg.green.start": "\u1010\u0101",
 	"arcane_core.api:icon.bg.green.continue": "\u1020\u0101",
 	"arcane_core.api:icon.bg.green.end": "\u1030\u0101",
 	"arcane_core.api:icon.bg.green.wide": "\u1010\u0101\u1030\u0101",
 
-	"arcane_core.api:icon.bg.blue": "\u1100",
+	"arcane_core.api:icon.bg.blue": "\u1100\u0101",
 	"arcane_core.api:icon.bg.blue.start": "\u1110\u0101",
 	"arcane_core.api:icon.bg.blue.continue": "\u1120\u0101",
 	"arcane_core.api:icon.bg.blue.end": "\u1130\u0101",
 	"arcane_core.api:icon.bg.blue.wide": "\u1110\u0101\u1130\u0101",
 
-	"arcane_core.api:icon.bg.red": "\u1200",
+	"arcane_core.api:icon.bg.red": "\u1200\u0101",
 	"arcane_core.api:icon.bg.red.start": "\u1210\u0101",
 	"arcane_core.api:icon.bg.red.continue": "\u1220\u0101",
 	"arcane_core.api:icon.bg.red.end": "\u1230\u0101",
 	"arcane_core.api:icon.bg.red.wide": "\u1210\u0101\u1230\u0101",
 
-	"arcane_core.api:icon.bg.arcane": "\u1300",
-	"arcane_core.api:icon.bg.arcane.start": "\u1310\u0101",
-	"arcane_core.api:icon.bg.arcane.continue": "\u1320\u0101",
-	"arcane_core.api:icon.bg.arcane.end": "\u1330\u0101",
-	"arcane_core.api:icon.bg.arcane.wide": "\u1310\u0101\u1330\u0101",
-
-	"arcane_core.api:icon.bg.gray": "\u1400",
+	"arcane_core.api:icon.bg.gray": "\u1400\u0101",
 	"arcane_core.api:icon.bg.gray.start": "\u1410\u0101",
 	"arcane_core.api:icon.bg.gray.continue": "\u1420\u0101",
 	"arcane_core.api:icon.bg.gray.end": "\u1430\u0101",
 	"arcane_core.api:icon.bg.gray.wide": "\u1410\u0101\u1430\u0101",
 
-	"arcane_core.api:icon.bg.white": "\u1500",
-	"arcane_core.api:icon.bg.white.start": "\u1510\u0101",
-	"arcane_core.api:icon.bg.white.continue": "\u1520\u0101",
-	"arcane_core.api:icon.bg.white.end": "\u1530\u0101",
-	"arcane_core.api:icon.bg.white.wide": "\u1510\u0101\u1530\u0101",
+	"arcane_core.api:icon.bg.custom": "\u1500\u0101",
+	"arcane_core.api:icon.bg.custom.start": "\u1510\u0101",
+	"arcane_core.api:icon.bg.custom.continue": "\u1520\u0101",
+	"arcane_core.api:icon.bg.custom.end": "\u1530\u0101",
+	"arcane_core.api:icon.bg.custom.wide": "\u1510\u0101\u1530\u0101",
 
 	"arcane_core.api:icon.symbol.check": "\u2000\u0101",
 	"arcane_core.api:icon.symbol.i": "\u2001\u0101",
@@ -102,7 +96,6 @@
 	"arcane_core.api:icon.symbol.lock.unlocked": "\u2022\u0101",
 	"arcane_core.api:icon.symbol.save": "\u2023\u0101",
 	"arcane_core.api:icon.symbol.experimental": "\u2024\u0101",
-	"arcane_core.api:icon.symbol.arcane_mini_logo": "\u2025\u0101",
 
 	"arcane_core.api:icon.section.success.start": "\u1000\u0111\u2000\u0203",
 	"arcane_core.api:icon.section.success.continue": "\u1040\u0203",
@@ -130,15 +123,6 @@
 	"arcane_core.api:icon.section.warning.continue.new_line": "\n\u1240\u0203",
 	"arcane_core.api:icon.section.warning.continue.2.new_line": "\n\u1240\n\u1240\u0203",
 	"arcane_core.api:icon.section.warning.end.new_line": "\n\u1250\u0203",
-
-	"arcane_core.api:icon.section.arcane.start": "\u1300\u0111\u2025\u0203",
-	"arcane_core.api:icon.section.arcane.continue": "\u1340\u0203",
-	"arcane_core.api:icon.section.arcane.continue.2": "\u1340\n\u1340\u0203",
-	"arcane_core.api:icon.section.arcane.end": "\u1350\u0203",
-	"arcane_core.api:icon.section.arcane.start.new_line": "\n\u1300\u0111\u2025\u0203",
-	"arcane_core.api:icon.section.arcane.continue.new_line": "\n\u1340\u0111\u1340\u0203",
-	"arcane_core.api:icon.section.arcane.continue.2.new_line": "\n\u1340\n\u1340\u0203",
-	"arcane_core.api:icon.section.arcane.end.new_line": "\n\u1350\u0203",
 
 	"arcane_core.api:icon.section.custom.start": "\u1500\u0203",
 	"arcane_core.api:icon.section.custom.continue": "\u1540\u0203",
@@ -173,5 +157,5 @@
 	"arcane_core.api:icon.button.open": "\u1110\u0101\u1130\u0121 Open\u0208",
 	"arcane_core.api:icon.button.read": "\u1210\u0101\u1230\u0121 Read\u0208",
 
-	"arcane_core.api:icon.module.mana.crystal": "\u0110"
+	"arcane_core.api:icon.module.mana.symbol": "\u0110"
 }

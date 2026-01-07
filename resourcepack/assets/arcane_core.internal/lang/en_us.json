@@ -1,3 +1,20 @@
 {
-	"arcane_core.internal:util.empty": ""
+	"arcane_core.internal:util.empty": "",
+
+	"arcane_core.internal:icon.bg.arcane": "\u1300\u0101",
+	"arcane_core.internal:icon.bg.arcane.start": "\u1310\u0101",
+	"arcane_core.internal:icon.bg.arcane.continue": "\u1320\u0101",
+	"arcane_core.internal:icon.bg.arcane.end": "\u1330\u0101",
+	"arcane_core.internal:icon.bg.arcane.wide": "\u1310\u0101\u1330\u0101",
+
+	"arcane_core.internal:icon.symbol.arcane_mini_logo": "\u2025\u0101",
+
+	"arcane_core.internal:icon.section.arcane.start": "\u1300\u0111\u2025\u0203",
+	"arcane_core.internal:icon.section.arcane.continue": "\u1340\u0203",
+	"arcane_core.internal:icon.section.arcane.continue.2": "\u1340\n\u1340\u0203",
+	"arcane_core.internal:icon.section.arcane.end": "\u1350\u0203",
+	"arcane_core.internal:icon.section.arcane.start.new_line": "\n\u1300\u0111\u2025\u0203",
+	"arcane_core.internal:icon.section.arcane.continue.new_line": "\n\u1340\u0111\u1340\u0203",
+	"arcane_core.internal:icon.section.arcane.continue.2.new_line": "\n\u1340\n\u1340\u0203",
+	"arcane_core.internal:icon.section.arcane.end.new_line": "\n\u1350\u0203"
 }
