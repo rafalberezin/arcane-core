@@ -18,6 +18,17 @@
 	"arcane_core.internal:icon.zw.tile.bg.arcane.wide.x2": "\u1010\u0101\u1030\u0121",
 	"arcane_core.internal:icon.zw.tile.bg.arcane.wide.x3": "\u1010\u0101\u1020\u0101\u1030\u0131",
 
+	"arcane_core.internal:icon.zw.misc.letter_token.small.arcane": "\u1060\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.red": "\u1160\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.green": "\u1260\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.blue": "\u1360\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.bronze": "\u1460\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.gray": "\u1560\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.custom": "\u1660\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.custom.layer.highlight": "\u1661\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.custom.layer.base": "\u1662\u010a",
+	"arcane_core.internal:icon.zw.misc.letter_token.small.custom.layer.shadow": "\u1663\u010a",
+
 	"arcane_core.internal:icon.zw.tile.symbol.arcane_mini_logo": "\u2025\u0111",
 
 	"arcane_core.internal:icon.premade.section.arcane.start": "\u1000\u0111\u2025\u0203",
