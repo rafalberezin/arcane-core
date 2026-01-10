@@ -1,6 +1,15 @@
+use super::api::InRegisterProject
+use super::api::VersionArray
+use ::java::util::text::TextObject
+
+type TextLine = [TextObject]
+type TextBlob = [TextLine]
+
 dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
 	"/": struct {
 		errors: [string],
+		load_report: TextBlob,
+		core_versions: [VersionArray],
 	},
 }
 
@@ -11,5 +20,16 @@ dispatch minecraft:storage[arcane_core.internal:temp] to struct TempStorage {
 
 		error_code?: int @ 0..,
 		macro?: struct { [string]: any },
+		text_line?: TextLine,
+
+		phase: struct {
+			[#[dispatcher_key="arcane_core.internal:temp.phase"] string]?: arcane_core.internal:temp.phase[[%key]],
+		},
 	},
+}
+
+dispatch arcane_core.internal:temp.phase[register_project] to struct RegisterProjectPhase {
+	project?: InRegisterProject,
+	success_blob?: TextBlob,
+	warning_blob?: TextBlob,
 }

@@ -7,4 +7,5 @@ data modify storage arcane_core.internal:temp / set value { phase: { register_pr
 data modify storage arcane_core.internal:core / set value { \
 	errors: [], \
 	load_report: [], \
+	core_versions: [], \
 }

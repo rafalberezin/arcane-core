@@ -3,6 +3,7 @@
 	"values": [
 		"#arcane_core.internal:module/disable",
 		"arcane_core.internal:data/load",
+		"#arcane_core.internal:core/version/register",
 
 		{
 			"id": "#arcane_core.api:core/load",
