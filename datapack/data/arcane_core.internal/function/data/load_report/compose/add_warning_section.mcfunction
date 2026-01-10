@@ -2,17 +2,25 @@
 #
 # @internal
 
-data modify storage arcane_core.internal:temp /.text_blob set value [ \
-	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.section.warning.start.new_line", fallback: "\n"}, \
+data modify storage arcane_core.internal:core /.load_report append value [ \
+	{text: ""}, \
+	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.premade.section.warning.start", fallback: ""}, \
+	{translate: "arcane_core.internal:util.empty", fallback: "[!] ", color: "#c44949"}, \
 	{text: "These projects require a different version", color: "#c44949"}, \
-	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.section.warning.continue.new_line", fallback: "\n"}, \
+]
+function arcane_core.internal:data/load_report/compose/compat_adaptive_newline
+
+data modify storage arcane_core.internal:core /.load_report append value [ \
+	{text: ""}, \
+	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.premade.section.warning.continue", fallback: ""}, \
+	{translate: "arcane_core.internal:util.empty", fallback: " |  ", color: "#c44949"}, \
 	{text: "of ", color: "#c44949"}, \
 	{text: "Arcane Core", color: "#edb97e"}, \
 	{text: " and might not work properly:", color: "#c44949"}, \
 ]
-data modify storage arcane_core.internal:core /.load_report append from storage arcane_core.internal:temp /.text_blob[]
+function arcane_core.internal:data/load_report/compose/compat_adaptive_newline
 
 data modify storage arcane_core.internal:core /.load_report append from storage arcane_core.internal:temp /.phase.register_project.warning_blob[]
 
-data modify storage arcane_core.internal:core /.load_report append value \
-	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.section.warning.end.new_line", fallback: "\n"}
+data modify storage arcane_core.internal:core /.load_report[-1] append value \
+	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.premade.section.warning.end.new_line", fallback: ""}

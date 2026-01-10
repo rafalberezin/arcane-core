@@ -2,5 +2,5 @@
 #
 # @internal
 
-data modify storage arcane_core.internal:temp /.text_blob append value {text: ""}
-data modify storage arcane_core.internal:temp /.text_blob[-1].text set from storage arcane_core.internal:temp /.phase.register_project.project.name
+data modify storage arcane_core.internal:temp /.text_line append value {text: ""}
+data modify storage arcane_core.internal:temp /.text_line[-1].text set from storage arcane_core.internal:temp /.phase.register_project.project.name

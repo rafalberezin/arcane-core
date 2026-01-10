@@ -7,50 +7,58 @@ data modify storage arcane_core.internal:core /.load_report append value [ \
 	{ \
 		translate: "arcane_core.internal:util.slot", fallback: "", \
 		with: [{text: "", font: "arcane_core.api:icon/composite", extra: [ \
-			{translate: "arcane_core.api:icon.premade.section.info.start.new_line"}, \
+			{translate: "arcane_core.api:icon.premade.section.info.start"}, \
 			{text: "Menu: "}, \
 			{ \
 				translate: "arcane_core.api:icon.premade.button.open", \
-				click_event: { \
+				clickEvent: { \
 					action: "run_command", \
-					command: "/trigger arcane_core.menu", \
+					value: "/trigger arcane_core.menu", \
 				}, \
-				hover_event: { \
+				hoverEvent: { \
 					action: "show_text", \
-					value: [ \
-						{text: "Click the button or use command:\n"}, \
+					contents: [ \
+						{text: "Click the button or use command:"}, \
+						{translate: "arcane_core.api:util.new_line"}, \
 						{text: "/trigger arcane_core.menu", color: "#edb97e"}, \
 					], \
 				}, \
 			}, \
-			{text: "\n"}, \
 		]}], \
 	}, \
 	{ \
 		translate: "arcane_core.internal:util.empty", fallback: "%s", \
 		with: [{text: "", extra: [ \
-			{text: "\n[i] ", color: "#5991ec"}, \
+			{text: "[i] ", color: "#5991ec"}, \
 			{text: "Menu: "}, \
 			{ \
 				text: "[BLOCKED]", \
 				color: "#c44949", \
-				hover_event: { \
+				hoverEvent: { \
 					action: "show_text", \
-					value: "This menu will not work without the Arcane Core Resource pack.", \
+					contents: "This menu will not work without the Arcane Core Resource pack.", \
 				}, \
 			}, \
-			{text: "\n[!] You do not have the required ", color: "#c44949"}, \
+		]}], \
+	}, \
+]
+
+data modify storage arcane_core.internal:core /.load_report append value [ \
+	{ \
+		translate: "arcane_core.internal:util.empty", fallback: "%s", \
+		with: [{text: "", extra: [ \
+			{text: "[!] You do not have the required ", color: "#c44949"}, \
 			{text: "Arcane Core", color: "#edb97e" }, \
-			{text: " resource pack.\n |  Click ", color: "#c44949"}, \
+			{text: " resource pack. Click ", color: "#c44949"}, \
 			{ \
 				text: "[HERE]", color: "#5991ec", \
-				click_event: { \
+				clickEvent: { \
 					action: "open_url", \
-					url: "https://modrinth.com/datapack/arcane-core", \
+					value: "https://modrinth.com/datapack/arcane-core", \
 				}, \
-				hover_event: { \
+				hoverEvent: { \
 					action: "show_text", \
-					value: {text: "Click to show project on Modrinth."}, \
+					contents: "Click to show project on Modrinth.", \
 				}, \
 			}, \
 			{text: " to download.", color: "#c44949"}, \
