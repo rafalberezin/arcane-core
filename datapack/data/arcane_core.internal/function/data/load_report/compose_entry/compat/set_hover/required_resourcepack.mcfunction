@@ -1,4 +1,4 @@
-#> arcane_core.internal:data/load_report/compose_entry/compat/set_hover/optional_resourcepack
+#> arcane_core.internal:data/load_report/compose_entry/compat/set_hover/required_resourcepack
 #
 # @internal
 
