@@ -1,4 +1,4 @@
-#> arcane_core.api:module/actionbar/change_display
+#> arcane_core.api:module/actionbar/if_can_use
 #
 # Returns whether you can use the actionbar display.
 #

@@ -1,4 +1,4 @@
-#> arcane_core.api:module/actionbar/change_display
+#> arcane_core.api:module/actionbar/if_can_then_use
 #
 # Returns whether you can use the actionbar display
 # and automatically mark it as being used.

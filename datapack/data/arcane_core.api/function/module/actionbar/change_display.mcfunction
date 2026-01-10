@@ -1,6 +1,6 @@
 #> arcane_core.api:module/actionbar/change_display
 #
-# Call this function before you turn on a passive display.
+# Call this function before you turn in a passive display.
 #
 # @api
 #
