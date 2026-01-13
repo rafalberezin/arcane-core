@@ -1,6 +1,11 @@
+use super::api::ItemData
 use super::api::InRegisterProject
 use super::api::VersionArray
 use ::java::util::text::TextObject
+
+struct Session {
+	id: int @ 1..
+}
 
 type TextLine = [TextObject]
 type TextBlob = [TextLine]
@@ -9,6 +14,7 @@ dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
 	"/": struct {
 		errors: [string],
 		load_report: TextBlob,
+		session: Session,
 		core_versions: [VersionArray],
 	},
 }
@@ -33,3 +39,12 @@ dispatch arcane_core.internal:temp.phase[register_project] to struct RegisterPro
 	success_blob?: TextBlob,
 	warning_blob?: TextBlob,
 }
+
+dispatch minecraft:storage[arcane_core.internal:module.item] to struct ItemModuleStorage {
+	"/": struct {
+		mainhand: ItemData,
+		offhand: ItemData,
+	},
+}
+
+dispatch arcane_core.internal:module.item[session] to Session

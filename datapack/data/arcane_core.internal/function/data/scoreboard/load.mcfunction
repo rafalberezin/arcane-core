@@ -7,5 +7,7 @@ scoreboard objectives add arcane_core.math dummy
 scoreboard objectives add arcane_core.config dummy
 scoreboard objectives add arcane_core.menu trigger
 
+scoreboard objectives add arcane_core.internal.sneak minecraft.custom:minecraft.sneak_time
+
 function arcane_core.internal:data/scoreboard/const
 function arcane_core.internal:data/scoreboard/version
