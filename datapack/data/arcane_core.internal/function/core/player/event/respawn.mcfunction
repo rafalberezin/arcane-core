@@ -4,4 +4,5 @@
 
 tag @s remove arcane_core.internal.event.death.processed
 
-function #arcane_core.internal:core/player/event/respawn
+function arcane_core.internal:module/mana/on_respawn
+function #arcane_core.api:player/event/respawn
