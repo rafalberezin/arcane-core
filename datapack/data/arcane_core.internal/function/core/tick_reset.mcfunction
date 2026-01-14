@@ -11,3 +11,5 @@ scoreboard players reset #arcane_core.internal:time.day_time.minutes arcane_core
 scoreboard players reset #arcane_core.internal:time.day_time.minutes.leading_zero arcane_core.math
 scoreboard players reset #arcane_core.internal:time.day_time.ticks arcane_core.math
 scoreboard players reset #arcane_core.internal:time.moon.phase arcane_core.math
+
+data remove storage arcane_core.internal:temp /.moon

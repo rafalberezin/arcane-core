@@ -12,7 +12,7 @@ execute store result score #arcane_core.internal:temp.x arcane_core.state run da
 execute store result score #arcane_core.internal:temp.y arcane_core.state run data get storage arcane_core.internal:temp /.pos[1]
 execute store result score #arcane_core.internal:temp.z arcane_core.state run data get storage arcane_core.internal:temp /.pos[2]
 
-function arcane_core.internal:content/actionbar/compass/get_facing
+function arcane_core.internal:content/actionbar/compass/get_icon/main
 
 title @s actionbar [{"text": ""}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "["}, \
@@ -22,6 +22,6 @@ title @s actionbar [{"text": ""}, \
 	{"text": " "}, \
 	{"score": { "name": "#arcane_core.internal:temp.z", "objective": "arcane_core.state" }}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "|"}, \
-	{"storage": "arcane_core.internal:temp", "nbt": "/.string", "color": "#edb97e"}, \
+	{"storage": "arcane_core.internal:temp", "nbt": "/.any", "interpret": true}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "]"} \
 ]

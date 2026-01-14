@@ -26,11 +26,13 @@ dispatch minecraft:storage[arcane_core.internal:temp] to struct TempStorage {
 
 		error_code?: int @ 0..,
 		macro?: struct { [string]: any },
+		pos?: [double] @ 3,
 		text_line?: TextLine,
 
 		phase: struct {
 			[#[dispatcher_key="arcane_core.internal:temp.phase"] string]?: arcane_core.internal:temp.phase[[%key]],
 		},
+		moon?: TextObject,
 	},
 }
 

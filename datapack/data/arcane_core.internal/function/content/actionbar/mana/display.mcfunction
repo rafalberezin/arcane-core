@@ -8,7 +8,7 @@ execute unless entity @s[tag=arcane_core.internal.module.actionbar.display.mana]
 
 title @s actionbar [{"text": ""}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "["}, \
-	{"font": "arcane_core.api:icon/module", "translate": "arcane_core.api:icon.module.mana.crystal", "fallback": ""}, \
+	{"font": "arcane_core.api:icon/module", "translate": "arcane_core.api:icon.module.mana.symbol", "fallback": ""}, \
 	{"text": " "}, \
 	{"score": { "name": "@s", "objective": "arcane_core.api.module.mana.current" }, "color": "#2bb5ff"}, \
 	{"text": "/"}, \

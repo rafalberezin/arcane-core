@@ -340,5 +340,24 @@
 	"arcane_core.api:icon.premade.badge.config.cog": "\u1400\u0111\u2005\u0203",
 	"arcane_core.api:icon.premade.badge.experimental": "\u1000\u0111\u2024\u0203",
 
-	"arcane_core.api:icon.module.mana.symbol": "\u0110"
+	"arcane_core.api:icon.module.mana.symbol": "\u1000",
+
+	"arcane_core.api:icon.module.actionbar.compass.W": "\u2010",
+	"arcane_core.api:icon.module.actionbar.compass.NW": "\u2020",
+	"arcane_core.api:icon.module.actionbar.compass.N": "\u2030",
+	"arcane_core.api:icon.module.actionbar.compass.NE": "\u2040",
+	"arcane_core.api:icon.module.actionbar.compass.E": "\u2050",
+	"arcane_core.api:icon.module.actionbar.compass.SE": "\u2060",
+	"arcane_core.api:icon.module.actionbar.compass.S": "\u2070",
+	"arcane_core.api:icon.module.actionbar.compass.SW": "\u2080",
+
+	"arcane_core.api:icon.time.sun": "\u2100",
+	"arcane_core.api:icon.time.moon.full_moon": "\u2110",
+	"arcane_core.api:icon.time.moon.waning_gibbous": "\u2120",
+	"arcane_core.api:icon.time.moon.third_quarter": "\u2130",
+	"arcane_core.api:icon.time.moon.waning_crescent": "\u2140",
+	"arcane_core.api:icon.time.moon.new_moon": "\u2150",
+	"arcane_core.api:icon.time.moon.waxing_crescent": "\u2160",
+	"arcane_core.api:icon.time.moon.first_quarter": "\u2170",
+	"arcane_core.api:icon.time.moon.waxing_gibbous": "\u2180"
 }

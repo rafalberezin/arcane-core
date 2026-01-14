@@ -3,9 +3,16 @@
 		{
 			"type": "bitmap",
 			"file": "arcane_core.internal:font/module.png",
-			"ascent": 9,
-			"height": 11,
-			"chars": ["\u0110"]
+			"ascent": 12,
+			"height": 16,
+			"chars": [
+				"\u1000\u2010\u2020\u2030\u2040\u2050\u2060\u2070\u2080",
+				"\u2100\u2110\u2120\u2130\u2140\u2150\u2160\u2170\u2180"
+			]
+		},
+		{
+			"type": "reference",
+			"id": "arcane_core.api:include/ascii"
 		}
 	]
 }
