@@ -7,7 +7,7 @@ function arcane_core.internal:data/load_report/compose_entry/compat/adaptive_new
 
 function arcane_core.internal:data/load_report/compose_entry/add_name
 
-execute unless score #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.ok arcane_core.state \
+execute unless score #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.ok arcane_core.api.state \
 	run function arcane_core.internal:data/load_report/compose_entry/add_version_range
 
 function arcane_core.internal:data/load_report/compose_entry/add_version
@@ -15,7 +15,7 @@ function arcane_core.internal:data/load_report/compose_entry/add_version
 execute if data storage arcane_core.internal:temp /.phase.register_project.project.resourcepack \
 	run function arcane_core.internal:data/load_report/compose_entry/add_resourcepack_notice
 
-execute if score #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.ok arcane_core.state \
+execute if score #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.ok arcane_core.api.state \
 	run return run data modify storage arcane_core.internal:temp /.phase.register_project.success_blob append from storage arcane_core.internal:temp /.text_line
 
 data modify storage arcane_core.internal:temp /.phase.register_project.warning_blob append from storage arcane_core.internal:temp /.text_line

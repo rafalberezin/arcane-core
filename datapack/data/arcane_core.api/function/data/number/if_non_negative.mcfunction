@@ -13,5 +13,5 @@
 #
 # @returns Whether the given number is non-negative.
 
-execute store result score #arcane_core.internal:temp arcane_core.state run data get storage arcane_core.api:io in.any
-return run execute if score #arcane_core.internal:temp arcane_core.state matches 0..
+execute store result score #arcane_core.internal:temp arcane_core.api.state run data get storage arcane_core.api:io in.any
+return run execute if score #arcane_core.internal:temp arcane_core.api.state matches 0..

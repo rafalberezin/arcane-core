@@ -23,8 +23,8 @@ data modify storage arcane_core.internal:temp /.text_line[-1].extra[1].text set 
 function arcane_core.internal:data/load_report/compose_entry/compat/set_hover/min_version
 
 data modify storage arcane_core.internal:temp /.macro set value {minor: 0, patch: 0}
-scoreboard players add #arcane_core.internal:temp.major arcane_core.state 1
-execute store result storage arcane_core.internal:temp /.macro.major int 1 run scoreboard players get #arcane_core.internal:temp.major arcane_core.state
+scoreboard players add #arcane_core.internal:temp.major arcane_core.api.state 1
+execute store result storage arcane_core.internal:temp /.macro.major int 1 run scoreboard players get #arcane_core.internal:temp.major arcane_core.api.state
 
 function arcane_core.internal:data/load_report/compose_entry/format_version_m with storage arcane_core.internal:temp /.macro
 data modify storage arcane_core.internal:temp /.text_line[-1].extra[3].text set from storage arcane_core.internal:temp /.string

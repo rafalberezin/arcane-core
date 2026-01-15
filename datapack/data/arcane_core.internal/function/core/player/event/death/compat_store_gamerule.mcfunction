@@ -2,4 +2,4 @@
 #
 # @internal
 
-execute store result score #arcane_core.internal:temp arcane_core.state run gamerule immediate_respawn
+execute store result score #arcane_core.internal:temp arcane_core.api.state run gamerule immediate_respawn

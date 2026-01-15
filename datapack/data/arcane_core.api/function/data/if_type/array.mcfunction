@@ -11,8 +11,8 @@
 #
 # @returns Whether the given value is an array.
 
-execute store success score #arcane_core.internal:temp arcane_core.state \
+execute store success score #arcane_core.internal:temp arcane_core.api.state \
 	run data modify storage arcane_core.api:io in.any append value 0
 data remove storage arcane_core.api:io in.any[-1]
 
-return run scoreboard players get #arcane_core.internal:temp arcane_core.state
+return run scoreboard players get #arcane_core.internal:temp arcane_core.api.state

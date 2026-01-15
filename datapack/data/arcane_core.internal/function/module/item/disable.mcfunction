@@ -2,4 +2,4 @@
 #
 # @internal
 
-scoreboard players reset #arcane_core.internal:module.item.enabled arcane_core.state
+scoreboard players reset #arcane_core.internal:module.item.enabled arcane_core.api.state

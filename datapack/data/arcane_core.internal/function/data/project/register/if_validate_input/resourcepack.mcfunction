@@ -2,7 +2,7 @@
 #
 # @internal
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.register_project.resourcepack.required arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.register_project.resourcepack.required arcane_core.api.state
 
 execute unless data storage arcane_core.internal:temp /.phase.register_project.project.resourcepack.required run return 0
 

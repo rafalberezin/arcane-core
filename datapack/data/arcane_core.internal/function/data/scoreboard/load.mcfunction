@@ -2,9 +2,9 @@
 #
 # @internal
 
-scoreboard objectives add arcane_core.state dummy
-scoreboard objectives add arcane_core.math dummy
-scoreboard objectives add arcane_core.config dummy
+scoreboard objectives add arcane_core.api.state dummy
+scoreboard objectives add arcane_core.api.math dummy
+scoreboard objectives add arcane_core.api.config dummy
 scoreboard objectives add arcane_core.menu trigger
 
 scoreboard objectives add arcane_core.internal.sneak minecraft.custom:minecraft.sneak_time

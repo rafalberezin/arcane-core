@@ -9,8 +9,8 @@
 #
 # @context function specified in item's custom_data component `"arcane_core.api".tick.function` path.
 
-execute unless score #arcane_core.internal:module.item.mainhand arcane_core.state matches 1 \
-	if score #arcane_core.internal:module.item.primary arcane_core.state matches 1 \
+execute unless score #arcane_core.internal:module.item.mainhand arcane_core.api.state matches 1 \
+	if score #arcane_core.internal:module.item.primary arcane_core.api.state matches 1 \
 	run return 1
 
 return 0

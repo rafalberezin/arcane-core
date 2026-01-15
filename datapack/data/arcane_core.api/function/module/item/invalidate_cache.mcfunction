@@ -4,4 +4,4 @@
 #
 # @context function specified in item's custom_data component `"arcane_core.api".tick.function` path.
 
-scoreboard players set #arcane_core.internal:module.item.valid_cache arcane_core.state 0
+scoreboard players set #arcane_core.internal:module.item.valid_cache arcane_core.api.state 0

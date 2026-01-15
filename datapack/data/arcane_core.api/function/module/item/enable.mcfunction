@@ -4,4 +4,4 @@
 #
 # @api
 
-scoreboard players set #arcane_core.internal:module.item.enabled arcane_core.state 1
+scoreboard players set #arcane_core.internal:module.item.enabled arcane_core.api.state 1

@@ -5,11 +5,11 @@
 # @api
 #
 # @output
-# 	score #arcane_core.api:time.day_time.ticks arcane_core.math
+# 	score #arcane_core.api:time.day_time.ticks arcane_core.api.math
 # 		Current day time in ticks.
 
-execute unless score #arcane_core.internal:time.day_time.ticks arcane_core.math matches 0.. \
-	store result score #arcane_core.internal:time.day_time.ticks arcane_core.math \
+execute unless score #arcane_core.internal:time.day_time.ticks arcane_core.api.math matches 0.. \
+	store result score #arcane_core.internal:time.day_time.ticks arcane_core.api.math \
 	run time query daytime
 
-scoreboard players operation #arcane_core.api:time.day_time.ticks arcane_core.math = #arcane_core.internal:time.day_time.ticks arcane_core.math
+scoreboard players operation #arcane_core.api:time.day_time.ticks arcane_core.api.math = #arcane_core.internal:time.day_time.ticks arcane_core.api.math

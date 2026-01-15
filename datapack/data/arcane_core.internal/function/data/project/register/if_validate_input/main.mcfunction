@@ -11,14 +11,14 @@
 #
 # @internal
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.register_project.namespace arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.register_project.namespace arcane_core.api.state
 
 execute unless data storage arcane_core.internal:temp /.phase.register_project.project.namespace run return 0
 data modify storage arcane_core.api:io in.any set from storage arcane_core.internal:temp /.phase.register_project.project.namespace
 execute unless function arcane_core.api:data/if_type/string run return 0
 execute unless function arcane_core.api:data/if_considered/positive run return 0
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.register_project.name arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.register_project.name arcane_core.api.state
 
 execute unless data storage arcane_core.internal:temp /.phase.register_project.project.name run return 0
 data modify storage arcane_core.api:io in.any set from storage arcane_core.internal:temp /.phase.register_project.project.name
@@ -28,7 +28,7 @@ execute unless function arcane_core.api:data/if_considered/positive run return 0
 execute unless data storage arcane_core.internal:temp /.phase.register_project.project.version[2] run return 0
 execute if data storage arcane_core.internal:temp /.phase.register_project.project.version[3] run return 0
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.register_project.version arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.register_project.version arcane_core.api.state
 
 data modify storage arcane_core.api:io in.any set from storage arcane_core.internal:temp /.phase.register_project.project.version[0]
 execute unless function arcane_core.api:data/if_type/number run return 0
@@ -42,7 +42,7 @@ data modify storage arcane_core.api:io in.any set from storage arcane_core.inter
 execute unless function arcane_core.api:data/if_type/number run return 0
 execute unless function arcane_core.api:data/number/if_non_negative run return 0
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.register_project.core_version arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.register_project.core_version arcane_core.api.state
 
 execute unless data storage arcane_core.internal:temp /.phase.register_project.project.core_version[2] run return 0
 execute if data storage arcane_core.internal:temp /.phase.register_project.project.core_version[3] run return 0
@@ -63,5 +63,5 @@ execute if data storage arcane_core.internal:temp /.phase.register_project.proje
 	unless function arcane_core.internal:data/project/register/if_validate_input/resourcepack \
 	run return 0
 
-scoreboard players operation #arcane_core.internal:error arcane_core.state = #arcane_core.internal:error.ok arcane_core.state
+scoreboard players operation #arcane_core.internal:error arcane_core.api.state = #arcane_core.internal:error.ok arcane_core.api.state
 return 1

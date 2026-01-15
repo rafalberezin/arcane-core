@@ -15,13 +15,13 @@
 # @returns Whether the given value is a boolean.
 
 data modify storage arcane_core.internal:temp /.any set value true
-execute store success score #arcane_core.internal:temp arcane_core.state \
+execute store success score #arcane_core.internal:temp arcane_core.api.state \
 	run data modify storage arcane_core.internal:temp /.any set from storage arcane_core.api:io in.any
-execute if score #arcane_core.internal:temp arcane_core.state matches 0 run return 1
+execute if score #arcane_core.internal:temp arcane_core.api.state matches 0 run return 1
 
 data modify storage arcane_core.internal:temp /.any set value false
-execute store success score #arcane_core.internal:temp arcane_core.state \
+execute store success score #arcane_core.internal:temp arcane_core.api.state \
 	run data modify storage arcane_core.internal:temp /.any set from storage arcane_core.api:io in.any
-execute if score #arcane_core.internal:temp arcane_core.state matches 0 run return 1
+execute if score #arcane_core.internal:temp arcane_core.api.state matches 0 run return 1
 
 return 0

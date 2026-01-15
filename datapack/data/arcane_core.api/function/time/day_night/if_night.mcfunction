@@ -7,8 +7,8 @@
 # @returns
 # 	Whether it's currently night.
 
-execute unless score #arcane_core.internal:time.day_time.ticks arcane_core.math matches 0.. \
-	store result score #arcane_core.internal:time.day_time.ticks arcane_core.math \
+execute unless score #arcane_core.internal:time.day_time.ticks arcane_core.api.math matches 0.. \
+	store result score #arcane_core.internal:time.day_time.ticks arcane_core.api.math \
 	run time query daytime
 
-return run execute if score #arcane_core.internal:time.day_time.ticks arcane_core.math matches 12542..23459
+return run execute if score #arcane_core.internal:time.day_time.ticks arcane_core.api.math matches 12542..23459

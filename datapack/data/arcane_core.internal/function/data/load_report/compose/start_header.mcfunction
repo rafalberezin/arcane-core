@@ -18,9 +18,9 @@ data modify storage arcane_core.internal:core /.load_report set value [[\
 ]]
 
 data modify storage arcane_core.internal:temp /.any set value []
-execute store result storage arcane_core.internal:temp /.macro.major int 1 run scoreboard players get #arcane_core.internal:core.version.major arcane_core.state
-execute store result storage arcane_core.internal:temp /.macro.minor int 1 run scoreboard players get #arcane_core.internal:core.version.minor arcane_core.state
-execute store result storage arcane_core.internal:temp /.macro.patch int 1 run scoreboard players get #arcane_core.internal:core.version.patch arcane_core.state
+execute store result storage arcane_core.internal:temp /.macro.major int 1 run scoreboard players get #arcane_core.internal:core.version.major arcane_core.api.state
+execute store result storage arcane_core.internal:temp /.macro.minor int 1 run scoreboard players get #arcane_core.internal:core.version.minor arcane_core.api.state
+execute store result storage arcane_core.internal:temp /.macro.patch int 1 run scoreboard players get #arcane_core.internal:core.version.patch arcane_core.api.state
 
 function arcane_core.internal:data/load_report/compose_entry/format_version_m with storage arcane_core.internal:temp /.macro
 data modify storage arcane_core.internal:core /.load_report[-1][4].text set from storage arcane_core.internal:temp /.string
