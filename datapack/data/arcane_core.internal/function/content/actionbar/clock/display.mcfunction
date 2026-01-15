@@ -11,10 +11,10 @@ function arcane_core.api:time/day_time/get_hours_and_minutes
 execute unless score #arcane_core.internal:time.day_time.ticks arcane_core.api.math matches 12542..23459 \
 	run return run title @s actionbar [{"text": ""}, \
 		{"font": "arcane_core.api:icon/decorative", "text": "["}, \
-		{"score": { "name": "#arcane_core.api:time.day_time.hours", "objective": "arcane_core.api.math" }}, \
+		{"score": { "name": "#arcane_core.api:out.time.day_time.hours", "objective": "arcane_core.api.math" }}, \
 		{"text": ":"}, \
-		{"score": { "name": "#arcane_core.api:time.day_time.minutes.leading_zero", "objective": "arcane_core.api.math" }}, \
-		{"score": { "name": "#arcane_core.api:time.day_time.minutes", "objective": "arcane_core.api.math" }}, \
+		{"score": { "name": "#arcane_core.api:out.time.day_time.minutes.leading_zero", "objective": "arcane_core.api.math" }}, \
+		{"score": { "name": "#arcane_core.api:out.time.day_time.minutes", "objective": "arcane_core.api.math" }}, \
 		{"font": "arcane_core.api:icon/decorative", "text": "|"}, \
 		{"font": "arcane_core.api:icon/module", "translate": "arcane_core.api:icon.time.sun"}, \
 		{"font": "arcane_core.api:icon/decorative", "text": "]"} \
@@ -24,10 +24,10 @@ function arcane_core.internal:util/time/moon/get_icon/main
 
 title @s actionbar [{"text": ""}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "["}, \
-	{"score": { "name": "#arcane_core.api:time.day_time.hours", "objective": "arcane_core.api.math" }}, \
+	{"score": { "name": "#arcane_core.api:out.time.day_time.hours", "objective": "arcane_core.api.math" }}, \
 	{"text": ":"}, \
-	{"score": { "name": "#arcane_core.api:time.day_time.minutes.leading_zero", "objective": "arcane_core.api.math" }}, \
-	{"score": { "name": "#arcane_core.api:time.day_time.minutes", "objective": "arcane_core.api.math" }}, \
+	{"score": { "name": "#arcane_core.api:out.time.day_time.minutes.leading_zero", "objective": "arcane_core.api.math" }}, \
+	{"score": { "name": "#arcane_core.api:out.time.day_time.minutes", "objective": "arcane_core.api.math" }}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "|"}, \
 	{"storage": "arcane_core.internal:temp", "nbt": "/.moon", "interpret": true}, \
 	{"font": "arcane_core.api:icon/decorative", "text": "]"} \
