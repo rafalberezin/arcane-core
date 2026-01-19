@@ -1,8 +1,8 @@
 #> arcane_core.api:entity/link/target/unlink
 #
-# Remove the link to this entity's owner.
+# Remove the executing entity's link to its owner.
 #
 # @api
-# @context entity being owned by another entity
+# @context entity being owned by another entity.
 
 scoreboard players reset @s arcane_core.internal.link.linked_to

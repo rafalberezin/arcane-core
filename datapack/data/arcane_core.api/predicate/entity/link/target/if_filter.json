@@ -3,24 +3,24 @@
 	"value": {
 		"type": "minecraft:score",
 		"target": "this",
-		"score": "arcane_core.internal.link.link_id"
+		"score": "arcane_core.internal.link.linked_to"
 	},
 	"range": {
-		"max": {
-			"type": "minecraft:score",
-			"target": {
-				"type": "minecraft:fixed",
-				"name": "#arcane_core.internal:link.find"
-			},
-			"score": "arcane_core.internal.link.linked_to"
-		},
 		"min": {
 			"type": "minecraft:score",
 			"target": {
 				"type": "minecraft:fixed",
 				"name": "#arcane_core.internal:link.find"
 			},
-			"score": "arcane_core.internal.link.linked_to"
+			"score": "arcane_core.api.state"
+		},
+		"max": {
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#arcane_core.internal:link.find"
+			},
+			"score": "arcane_core.api.state"
 		}
 	}
 }

@@ -1,6 +1,7 @@
 #> arcane_core.api:entity/link/owner/unlink
 #
-# Remove the link to this entity's targets.
+# Remove the link ownership of the executing entity.
+# Only use this on utility entities you created and fully manage.
 #
 # @api
 # @context owner of other entities
