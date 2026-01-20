@@ -16,4 +16,3 @@ scoreboard objectives add arcane_core.internal.event.join minecraft.custom:minec
 scoreboard objectives add arcane_core.internal.event.death minecraft.custom:minecraft.time_since_death
 
 function arcane_core.internal:data/scoreboard/const
-function arcane_core.internal:data/scoreboard/version

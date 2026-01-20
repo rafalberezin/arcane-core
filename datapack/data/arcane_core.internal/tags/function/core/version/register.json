@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["arcane_core.internal:core/version/0_1_0"]
+	"values": ["arcane_core.internal:data/version/core/register/0_1_0"]
 }

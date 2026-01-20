@@ -10,12 +10,23 @@ struct Session {
 type TextLine = [TextObject]
 type TextBlob = [TextLine]
 
+type VersionString = #[match_regex="^\\d+\\.\\d+\\.\\d+$"] string
+
+struct VersionEntry {
+	str: VersionString,
+	arr: VersionArray
+}
+
 dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
 	"/": struct {
 		errors: [string],
 		load_report: TextBlob,
 		session: Session,
-		core_versions: [VersionArray],
+		/// required but set separately from the rest
+		version?: struct {
+			installed: VersionEntry,
+			present: [VersionEntry],
+		},
 	},
 }
 

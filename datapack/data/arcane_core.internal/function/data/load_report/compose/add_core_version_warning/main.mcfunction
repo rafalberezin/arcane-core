@@ -21,7 +21,7 @@ data modify storage arcane_core.internal:temp /.text_line set value [ \
 	{text: "Detected versions:", color: "white"}, \
 ]
 
-data modify storage arcane_core.internal:temp /.any set from storage arcane_core.internal:core /.core_versions
+data modify storage arcane_core.internal:temp /.any set from storage arcane_core.internal:core /.version.present
 
 function arcane_core.internal:data/load_report/compose/add_core_version_warning/compose_version_list
 function arcane_core.internal:data/load_report/compose/add_core_version_warning/compat_set_hover

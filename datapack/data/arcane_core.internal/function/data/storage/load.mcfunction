@@ -8,7 +8,6 @@ data modify storage arcane_core.internal:core / set value { \
 	errors: [], \
 	load_report: [], \
 	session: {id: 1}, \
-	core_versions: [], \
 }
 
 execute store result storage arcane_core.internal:core /.session.id int 1 run random value 1..

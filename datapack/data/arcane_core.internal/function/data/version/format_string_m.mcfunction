@@ -1,4 +1,4 @@
-#> arcane_core.internal:data/load_report/compose_entry/format_version_m
+#> arcane_core.internal:data/version/format_string_m
 #
 # @internal
 #
