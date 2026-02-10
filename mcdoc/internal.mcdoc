@@ -26,6 +26,10 @@ dispatch minecraft:storage[arcane_core.internal:core] to struct CoreStorage {
 		version?: struct {
 			installed: VersionEntry,
 			present: [VersionEntry],
+			resourcepack: struct {
+				key: #[translation_key] string,
+				str: VersionString,
+			},
 		},
 	},
 }

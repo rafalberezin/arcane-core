@@ -3,7 +3,6 @@
 # @internal
 
 data modify storage arcane_core.internal:core /.load_report append value [ \
-	{text: ""}, \
 	{ \
 		translate: "arcane_core.internal:util.slot", fallback: "", \
 		with: [{text: "", font: "arcane_core.api:icon/composite", extra: [ \
@@ -64,4 +63,12 @@ data modify storage arcane_core.internal:core /.load_report append value [ \
 			{text: " to download.", color: "#c44949"}, \
 		]}], \
 	}, \
+	{ \
+		translate: "arcane_core.internal:util.slot", fallback: "", \
+		font: "arcane_core.api:icon/composite", \
+	}, \
 ]
+
+function arcane_core.internal:data/load_report/compose/compose_resourcepack_mismatch_notice
+# data modify storage arcane_core.internal:temp /.text_line[0].with[0].extra[0].translate set value "arcane_core.api:icon.premade.section.info.end.new_line"
+data modify storage arcane_core.internal:core /.load_report[-1][1].with set from storage arcane_core.internal:temp /.text_line

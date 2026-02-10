@@ -2,6 +2,9 @@
 	"arcane_core.internal:util.empty": "",
 	"arcane_core.internal:util.slot": "%s",
 
+	"arcane_core.internal:util.version": "0.1.0",
+	"arcane_core.internal:util.version.0.1.0": "",
+
 	"arcane_core.internal:icon.tile.bg.arcane": "\u1000\u0101",
 	"arcane_core.internal:icon.tile.bg.arcane.start": "\u1010\u0101",
 	"arcane_core.internal:icon.tile.bg.arcane.continue": "\u1020\u0101",

@@ -8,6 +8,10 @@ data modify storage arcane_core.internal:core /.version set value { \
 		str: "0.1.0", \
 	}, \
 	present: [], \
+	resourcepack: { \
+		key: "arcane_core.internal:util.version.0.1.0", \
+		str: "0.1.0", \
+	}, \
 }
 
 execute store result score #arcane_core.internal:core.version.major arcane_core.api.state \
