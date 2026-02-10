@@ -2,6 +2,7 @@
 	"replace": true,
 	"values": [
 		"arcane_core.internal:core/player/load",
+		"arcane_core.internal:data/auth/player/load",
 		"#arcane_core.internal:core/player/config",
 
 		{
