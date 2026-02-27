@@ -1,0 +1,4 @@
+use ::java::util::text::TextObject
+
+type TextLine = [TextObject]
+type TextBlob = [TextLine]

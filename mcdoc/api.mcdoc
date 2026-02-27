@@ -1,13 +1,14 @@
+type VersionArray = [int @ 0..] @ 3
+
 dispatch minecraft:storage[arcane_core.api:io] to struct IOStorage {
 	in: IOStorageIn,
 	out: IOStorageOut,
 }
 
-type VersionArray = [int @ 0..] @ 3
-
 struct IOStorageIn {
-	core: struct {
-		register_project: InRegisterProject,
+	register: struct {
+		project?: InRegisterProject,
+		actionbar_display?: InRegisterActionbarDisplay,
 	},
 	"any": any,
 }
@@ -26,10 +27,21 @@ struct InRegisterProject {
 	},
 }
 
+struct InRegisterActionbarDisplay {
+	namespace: string @ 1..,
+	id: string @ 1..,
+	name: string @ 1..,
+	function: #[id="function"] string,
+}
+
 /// Custom item data to be exposed through data storage.
 struct CustomItemData {
 	[#[dispatcher_key="arcane_core.api:module.item.data"] string]?: arcane_core.api:module.item.data[[%key]],
 }
+
+dispatch arcane_core.api:module.item.data[%unknown] to any
+
+dispatch minecraft:storage[arcane_core.api:module.item] to ItemModuleStorage
 
 struct ItemModuleStorage {
 	hand: struct {
@@ -40,22 +52,18 @@ struct ItemModuleStorage {
 	}
 }
 
-dispatch arcane_core.api:module.item.data[%unknown] to any
-
-dispatch minecraft:storage[arcane_core.api:module.item] to ItemModuleStorage
-
 dispatch mcdoc:custom_data["arcane_core.api"] to struct ItemData {
+	/// Item data update specification.
 	update?: struct {
+		/// Item modifier to be applied to the item.
 		item_modifier: #[id="item_modifier"] string,
 	},
+	/// Tick handler for the item.
 	tick?: struct {
+		/// Function to be called for the item.
 		function: #[id="function"] string,
 	},
 
 	/// Custom item data to be exposed through data storage.
 	data?: CustomItemData,
-
-	// Top level extensions allowed for framework's internal usage only.
-	// These keys are not stable and not part of the public API surface.
-	[#[dispatcher_key="arcane_core.internal:module.item"] string]?: arcane_core.internal:module.item[[%key]],
 }

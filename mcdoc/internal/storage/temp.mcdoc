@@ -1,0 +1,32 @@
+use super::super::util::text::TextLine
+use ::java::util::text::TextObject
+
+dispatch minecraft:storage[arcane_core.internal:temp] to TempStorage
+
+struct TempStorage {
+	"/": struct {
+		"any"?: any,
+		"string"?: string,
+
+		macro?: struct { [string]: any },
+		pos?: [double] @ 3,
+		text_line?: TextLine,
+		moon?: TextObject,
+
+		load_phase: TempLoadPhase,
+		register: TempRegister,
+		module: TempModule,
+	}
+}
+
+struct TempLoadPhase {
+	[#[dispatcher_key="storage.arcane_core.internal:temp.load_phase"] string]?: storage.arcane_core.internal:temp.load_phase[[%key]]
+}
+
+struct TempRegister {
+	[#[dispatcher_key="storage.arcane_core.internal:temp.register"] string]?: storage.arcane_core.internal:temp.register[[%key]]
+}
+
+struct TempModule {
+	[#[dispatcher_key="storage.arcane_core.internal:temp.module"] string]?: storage.arcane_core.internal:temp.module[[%key]]
+}

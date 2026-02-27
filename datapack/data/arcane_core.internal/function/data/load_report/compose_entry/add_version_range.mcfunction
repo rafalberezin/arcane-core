@@ -13,9 +13,9 @@ data modify storage arcane_core.internal:temp /.text_line append value { \
 	], \
 }
 
-data modify storage arcane_core.internal:temp /.macro.major set from storage arcane_core.internal:temp /.phase.register_project.project.core_version[0]
-data modify storage arcane_core.internal:temp /.macro.minor set from storage arcane_core.internal:temp /.phase.register_project.project.core_version[1]
-data modify storage arcane_core.internal:temp /.macro.patch set from storage arcane_core.internal:temp /.phase.register_project.project.core_version[2]
+data modify storage arcane_core.internal:temp /.macro.major set from storage arcane_core.internal:temp /.register.project.core_version[0]
+data modify storage arcane_core.internal:temp /.macro.minor set from storage arcane_core.internal:temp /.register.project.core_version[1]
+data modify storage arcane_core.internal:temp /.macro.patch set from storage arcane_core.internal:temp /.register.project.core_version[2]
 
 function arcane_core.internal:data/version/format_string_m with storage arcane_core.internal:temp /.macro
 data modify storage arcane_core.internal:temp /.text_line[-1].extra[1].text set from storage arcane_core.internal:temp /.string

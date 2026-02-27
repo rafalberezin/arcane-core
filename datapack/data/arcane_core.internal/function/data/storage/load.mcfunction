@@ -2,7 +2,11 @@
 #
 # @internal
 
-data modify storage arcane_core.internal:temp / set value { phase: { register_project: {} } }
+data modify storage arcane_core.internal:temp / set value { \
+	load_phase: {}, \
+	register: {}, \
+	module: {}, \
+}
 
 data modify storage arcane_core.internal:core / set value { \
 	errors: [], \

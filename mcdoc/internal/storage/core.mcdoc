@@ -1,0 +1,26 @@
+use super::super::util::session::Session
+use super::super::util::text::TextBlob
+use super::super::util::version::VersionEntry
+use super::super::util::version::VersionString
+
+dispatch minecraft:storage[arcane_core.internal:core] to CoreStorage
+
+struct CoreStorage {
+	"/": struct {
+		errors: [string],
+		load_report: TextBlob,
+		session: Session,
+
+		/// REQUIRED - set separately from the rest
+		version?: struct {
+			installed: VersionEntry,
+			present: [VersionEntry],
+			resourcepack: struct {
+				key: #[translation_key] string,
+				str: VersionString,
+			}
+		},
+
+		[#[dispatcher_key="storage.arcane_core.internal:core"] string]: storage.arcane_core.internal:core[[%key]],
+	},
+}

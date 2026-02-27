@@ -3,7 +3,7 @@
 # @internal
 
 execute store result score #arcane_core.internal:temp arcane_core.api.state \
-	run data get storage arcane_core.internal:temp /.phase.register_project.project.resourcepack.required
+	run data get storage arcane_core.internal:temp /.register.project.resourcepack.required
 
 data modify storage arcane_core.internal:temp /.text_line append value {text: " "}
 
@@ -27,7 +27,7 @@ data modify storage arcane_core.internal:temp /.text_line append value { \
 	], \
 }
 
-function arcane_core.internal:data/load_report/compose_entry/format_translation_key_m with storage arcane_core.internal:temp /.phase.register_project.project
+function arcane_core.internal:data/load_report/compose_entry/format_translation_key_m with storage arcane_core.internal:temp /.register.project
 data modify storage arcane_core.internal:temp /.text_line[-1].translate set from storage arcane_core.internal:temp /.string
 
 execute if score #arcane_core.internal:temp arcane_core.api.state matches 0 \

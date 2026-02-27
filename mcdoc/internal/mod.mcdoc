@@ -1,0 +1,11 @@
+use super::api::InRegisterProject
+use util::text::TextBlob
+
+dispatch storage.arcane_core.internal:temp.register[project] to InRegisterProject
+dispatch storage.arcane_core.internal:temp.load_phase[projects] to LoadProjects
+
+struct LoadProjects  {
+	success_blob?: TextBlob,
+	warning_blob?: TextBlob,
+	menu_blob?: TextBlob,
+}

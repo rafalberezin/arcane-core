@@ -20,7 +20,7 @@ data modify storage arcane_core.internal:core /.load_report append value [ \
 ]
 function arcane_core.internal:data/load_report/compose/compat_adaptive_newline
 
-data modify storage arcane_core.internal:core /.load_report append from storage arcane_core.internal:temp /.phase.register_project.warning_blob[]
+data modify storage arcane_core.internal:core /.load_report append from storage arcane_core.internal:temp /.load_phase.projects.warning_blob[]
 
 data modify storage arcane_core.internal:core /.load_report[-1] append value \
 	{font: "arcane_core.api:icon/composite", translate: "arcane_core.api:icon.premade.section.warning.end.new_line", fallback: ""}

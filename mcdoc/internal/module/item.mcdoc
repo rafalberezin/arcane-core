@@ -1,0 +1,14 @@
+use super::super::super::api::ItemData as API_ItemData
+use super::super::util::session::Session
+
+struct ItemData {
+	...API_ItemData,
+	session: Session
+}
+
+dispatch storage.arcane_core.internal:temp.module[item] to TempModuleItem
+
+struct TempModuleItem {
+	mainhand: ItemData,
+	offhand: ItemData,
+}
